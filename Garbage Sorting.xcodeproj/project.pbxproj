@@ -14,6 +14,7 @@
 		B295841B27E9997E008D6809 /* Garbage_Sorting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B295841927E9997E008D6809 /* Garbage_Sorting.xcdatamodeld */; };
 		B295841D27E9997E008D6809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B295841C27E9997E008D6809 /* Assets.xcassets */; };
 		B295842027E9997E008D6809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B295841E27E9997E008D6809 /* LaunchScreen.storyboard */; };
+		B295842827E99DC0008D6809 /* .gitignore.txt in Resources */ = {isa = PBXBuildFile; fileRef = B295842727E99DC0008D6809 /* .gitignore.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B295841C27E9997E008D6809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B295841F27E9997E008D6809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B295842127E9997E008D6809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B295842727E99DC0008D6809 /* .gitignore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		B295840427E9997E008D6809 = {
 			isa = PBXGroup;
 			children = (
+				B295842727E99DC0008D6809 /* .gitignore.txt */,
 				B295840F27E9997E008D6809 /* Garbage Sorting */,
 				B295840E27E9997E008D6809 /* Products */,
 			);
@@ -130,6 +133,7 @@
 			files = (
 				B295842027E9997E008D6809 /* LaunchScreen.storyboard in Resources */,
 				B295841D27E9997E008D6809 /* Assets.xcassets in Resources */,
+				B295842827E99DC0008D6809 /* .gitignore.txt in Resources */,
 				B295841827E9997E008D6809 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +298,14 @@
 				DEVELOPMENT_TEAM = BVC3KQT57R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Garbage Sorting/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "垃圾分类";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,11 +329,14 @@
 				DEVELOPMENT_TEAM = BVC3KQT57R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Garbage Sorting/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "垃圾分类";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
