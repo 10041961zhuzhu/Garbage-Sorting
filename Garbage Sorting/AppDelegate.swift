@@ -7,14 +7,12 @@
 
 import UIKit
 import CoreData
-
+import LeanCloud
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       config()
         return true
     }
 
@@ -76,6 +74,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    func saveBackgroundContext(){
+        if backgroundContext.hasChanges{
+            do{
+                try backgroundContext.save()
+            }catch{
+                fatalError("后台数据存储失败（增删改):\(error)")
+            }
+        }
+    }
 
 }
 
+extension AppDelegate{
+    private func config(){
+        
+        //高德地图
+        AMapServices.shared().enableHTTPS = true
+        AMapServices.shared().apiKey = "04dc9c79e7c471f9ea3dc612488b9c40"
+       
+        
+        //UI
+         UINavigationBar.appearance().tintColor = .systemGreen
+        // 在 Application 初始化代码执行之前执行
+       // LCApplication.logLevel = .debug
+       //初始化LeanCloud
+        do {
+            try LCApplication.default.set(
+                id: LCAppid,
+                key: LCAppKey,
+                serverURL: LCServerURL)
+        } catch {
+            print(error)
+        }
+    }
+}
+
+
+
+
+
+ 

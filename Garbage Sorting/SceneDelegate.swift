@@ -7,6 +7,7 @@
 
 import UIKit
 
+var kStatusBarH: CGFloat = 0
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -16,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        kStatusBarH = windowScene.statusBarManager?.statusBarFrame.height ?? 0
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -48,6 +50,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+    
+    //支付宝登录回调处理 从别的url跳转回来 用户信息数据待处理
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let url = URLContexts.first?.url else{ return }
+        if url.host == "safepay"{
+            AlipaySDK.defaultService()?.processAuthResult(url){
+                res in
+                
+            }
+        }
     }
 
 

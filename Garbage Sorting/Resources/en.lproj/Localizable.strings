@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Garbage Sorting
+
+  Created by 朱禹陶 on 24/03/2022.
+  
+*/
+
+"物归原主" = "Home";
+// "关注" = "Follow";
+"变废为宝" = "Upcycle";
+"可回收物" = "Recycling";
+"其他垃圾" = "Other";
+"有害垃圾" = "Kitchen";
+"厨余垃圾" = "Hazardous";

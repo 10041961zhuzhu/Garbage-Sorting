@@ -1,86 +1,73 @@
 {
   "images" : [
     {
+      "filename" : "IMG_6567.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "IMG_6567-1.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "IMG_6567-2.jpg",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "IMG_6567-3.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "IMG_6567-4.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "IMG_6567-5.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "IMG_6567-6.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "IMG_6567-7.jpg",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "57x57"
+    },
+    {
+      "filename" : "IMG_6567-8.jpg",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "57x57"
+    },
+    {
+      "filename" : "IMG_6567-9.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "IMG_6567-10.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "20x20"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "20x20"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "29x29"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "29x29"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "40x40"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "40x40"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "76x76"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "83.5x83.5"
-    },
-    {
+      "filename" : "IMG_6567-11.jpg",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
